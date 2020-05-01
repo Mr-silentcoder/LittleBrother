@@ -25,7 +25,7 @@ from core.hashDecrypt import hashdecrypt
 
 
 #Help & settings
-from txt.help import helpLookup
+from txt.help import helpLookup ,helpMain
 import settings
 
 init()
@@ -130,27 +130,27 @@ try:
 				elif choix.lower() == "1":
 					if pr.count >= 1:
 						while True: 
-							profile = input(" Profil: ")
+							profile = input(" Profile: ")
 							if profile != '':
 								break
 						data = pr.searchDatabase(profile, database=database)
 						profilerFunc(data, path=settings.pathDatabase)
 					else:
-						print(warning+" Aucun profil trouvé. Veuillez en créer un.")
+						print(warning+" No profile found. Please create one.")
 				elif choix.lower() == "2":
 					pr.showAllProfiles(database=database)
 
 				elif choix.lower() == '3':
-					print("\n"+Fore.YELLOW+"(Format: Prenom Nom)"+Fore.RESET)
+					print("\n"+Fore.YELLOW+"(Format: First Name)"+Fore.RESET)
 					while True: 
-						name = input(" Nom du Profil: ")
+						name = input(" Name of Profile: ")
 						if name != '':
 							break
 					name = name.split(" ")
 					name = [i.capitalize() for i in name]
 					name = " ".join(name)
 					while True:
-						print(question+" Voulez vous inscrire un compte Twitter pour se profile ?")
+						print(question+" Want to sign up for a Twitter account ?")
 						choixPr = input(" [O/n]: " )
 						if choixPr.upper() == 'N':
 							break
@@ -160,7 +160,7 @@ try:
 							break
 					# print(found+" %s" % (twitter))
 					while True:
-						print(question+" Voulez vous inscrire un compte Instagram pour se profile ?")
+						print(question+" Want to sign up for an Instagram account ?")
 						choixPr = input(" [O/n]: " )
 						if choixPr.upper() == 'N':
 							break
@@ -169,7 +169,7 @@ try:
 							info['URL']['Instagram'] = instagram
 							break
 					while True:
-						print(question+" Voulez vous inscrire un compte Facebook pour se profile ?")
+						print(question+" Want to sign up for a Facebook account ?")
 						choixPr = input(" [O/n]: " )
 						if choixPr.upper() == 'N':
 							break
@@ -181,9 +181,9 @@ try:
 					create = pr.writeProfile(fileName=name, path=settings.pathDatabase, info=info)
 
 					if create:
-						print("\n"+found+" Le profil '%s' a été créé avec succès." % (name))
+						print("\n"+found+" The Profile '%s' was successfully created." % (name))
 					else:
-						print("\n"+warning+" Une erreur est survenue. Le profil '%s' n'a pas pu être créé." % (name))
+						print("\n"+warning+" An error has occurred. The profile '%s' could not be created.." % (name))
 
 		elif choix.lower() == 'e' or choix.lower() == 'exit':
 			sys.exit("\n"+information+" Bye ! :)")
