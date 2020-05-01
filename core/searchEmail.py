@@ -12,7 +12,7 @@ init()
 
 def SearchEmail():
 	email = input(" Email: ")
-	print("\n"+wait+" Recherche d'information sur '%s'..." % (email))
+	print("\n"+wait+" Information search on '%s'..." % (email))
 	lkd = leaked()
 	leak = lkd.email(email)
 
@@ -33,7 +33,7 @@ def SearchEmail():
 		print(table.table)
 
 
-		print("\n"+wait+" Recherche du Mot de passse...")
+		print("\n"+wait+" Password search...")
 
 	table_dump = [
 		('Email', 'Password'),
@@ -44,7 +44,7 @@ def SearchEmail():
 	urls = re.findall('url\\?q=(.*?)&', content)
 	cout = len(urls)
 	if cout == 0:
-		print(warning+" Aucun résultat.")
+		print(warning+" No result.")
 	else:
 		print(wait+" Scan %s Link..." % (str(cout)))
 		x = 1
@@ -73,4 +73,4 @@ def SearchEmail():
 			table = SingleTable(table_dump, " Dump ")
 			print("\n"+table.table)
 		else:
-			print(warning+" Aucune donnée pour '%s' " % (email))
+			print(warning+" No data for '%s' " % (email))
