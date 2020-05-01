@@ -1,64 +1,64 @@
 helpMain = """
  Name                       Action
  ----                       ------<
- Lookup                     Faire des recherches sur une personne.
- Other Tool                 Utiliser des outils autre que pour de la reconnaissance.
- Make file                  Creer un fichier '.txt' pour y ecrire les infos obtenu.
- Show Database              Accedez a la base de donnee.
+ Lookup                     Research a person.
+ Other Tool                 Use tools other than for reconnaissance.
+ Make file                  Create a '.txt' file to write the info.
+ Show Database              Access the database.
 
- Exit                       Quitter le logiciel.
- Help                       Affiche se message.
- Clear                      Efface l'ecran."""
+ Exit                       Exit the software.
+ Help                       Displays this message.
+ Clear                      Clear screen."""
 
 helpLookup = """
  Name                             Action
  ----                             ------
-[1]  Personne lookup                  Faire des recherches avec un nom, prenom et (ville).
-[2]  Username lookup                  Faire des recherches avec un pseudonyme.
-[3]  Adresse lookup                   Faire des recherches avec une adresse.
-[4]  Phone lookup                     Faire des recherches avec un numero de telephone.
-[5]  IP lookup                        Faire des recherches avec une adresse IP.
-[6]  SSID locator                     Faire des recherches avec une adresse MAC/BSSID
-[7]  Email lookup                     Faire des recherches avec une adresse email.
-[8]  Mail tracer                      Faire des recherches avec l'entete d'un mail.
-[9]  Employés recherche               Recherche les employés d'une entreprise.
-[10] Google search                    Faire des recherches sur google.
-[11] Facebook graphSearch             Faire des recherche grace au graphSearch.
-[12] twitter info                     Recuperer les informations d'un compte Twitter.
-[13] instagram info                   Recuperer les informations d'un compte Instagram.
+[1]  Personne lookup                  Search by name, first name and (city).
+[2]  Username lookup                  Search with a username.
+[3]  Adresse lookup                   Search with an adresse.
+[4]  Phone lookup                     Search with a phone number.
+[5]  IP lookup                        Search with a IP address.
+[6]  SSID locator                     Search with a MAC / BSSID address.
+[7]  Email lookup                     Search with an email address.
+[8]  Mail tracer                      Search with an email header.
+[9]  Employees search                 Search the employees of a company..
+[10] Google search                    Search on google.
+[11] Facebook graphSearch             Perform searches using graphSearch.
+[12] twitter info                     Retrieving information from a Twitter account.
+[13] instagram info                   Retrieve information from an Instagram account..
 
-[b]  Back main menu                   Revenir au menu principal.
-[e]  Exit script                      Pour quitter le logiciel.
-[c]  Clear screen                     Efface l'ecran.
-[h]  Help Message                     Affichez ce message."""
+[b]  Back main menu                   Return to main menu.
+[e]  Exit script                      To exit the software.
+[c]  Clear screen                     Clears the screen.
+[h]  Help Message                     View this message."""
 helpOtherTool = """
  Name                             Action
  ----                             ------
- Hash decrypter                   Essaye de décrypter un hash via une base de donnée en ligne.
+ Hash decrypter                   Try to decrypt a hash via an online database.
 
- Back main menu                   Revenir au menu principal.
- Exit script                      Pour quitter le logiciel.
- Clear screen                     Efface l'ecran."""
+ Back main menu                   Return to main menu.
+ Exit script                      To exit the software.
+ Clear screen                     Clears the screen."""
 
 helpProfiler = """
  Name                      Action
  ----                      ------
- Search Profiles           Recherche un profile dans la base de donnee.
- Show all Profiles         Affiche tout les profiles de la base de donnee.
+ Search Profiles           Search a profile in the database.
+ Show all Profiles         Displays all the profiles in the database.
 
- Exit Database             Quitte la base de donnee pour retourner au menu principal.
- Help message              Affiche se message
+ Exit Database             Exit the database to return to the main menu.
+ Help message              Displays this message.
 """
 
 helpCountry = """
  Name                      Action
  ----                      ------
- FR                        Utiliser les services Francais.
- BE                        Utiliser les services Belge.
- CH                        Utiliser les services Suisse.
- LU                        Utiliser les services Luxembourgeois.
- All                       Utiliser tout les services.
+ FR                        Use French services.
+ BE                        Use Belgian services.
+ CH                        Use Switzerland services.
+ LU                        Use Luxembourg services.
+ All                       Use all services.
 
- Back main menu            Revenir au menu principal.
- Exit script               Pour quitter le logiciel.
- Clear screen              Efface l'ecran."""
+ Back main menu            Return to main menu.
+ Exit script               To exit the software.
+ Clear screen              Clears the screen."""
