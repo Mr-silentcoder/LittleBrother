@@ -13,7 +13,7 @@ def searchPageDor(requete='', num=''):
 	soup = BeautifulSoup(page, "html.parser")
 	rep = testResponse(requete)
 	if rep == 1:
-		print(warning+" Aucun résultat pour votre recherche... o_o'")
+		print(warning+" No result for your search... o_o'")
 		if num != '':
 			# phoneNumber(num)
 			pass
@@ -61,7 +61,7 @@ def searchPageDor(requete='', num=''):
 	title = " Particulier "
 
 	TABLE_DATA = [
-		('Name', 'Adresse', 'Phone', 'Operateur'),
+		('Name', 'Address', 'Phone', 'Operator'),
 	]
 
 	listeInfos = []
