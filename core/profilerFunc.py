@@ -53,7 +53,7 @@ def profilerFunc(profile='', path=''):
 		profileID = profile['id']
 		file = profile['file']
 
-		print("\n"+found+" Profil séléctionné: %s (%s)\n" % (profileName, profileID))
+		print("\n"+found+" Profile selected: %s (%s)\n" % (profileName, profileID))
 
 		pr = Profiler()
 		dataProfile = pr.readProfile(file, path=path)
@@ -204,20 +204,20 @@ def profilerFunc(profile='', path=''):
 			global_info = """
 	Date: %s
 
-	Profil ID : %s
-	Prénom, Nom: %s
+	Profile ID : %s
+	First name, Last name: %s
 
 	Téléphone: %s
 	Emails: %s
-	Localisation: %s ; %s ; %s
+	Location: %s ; %s ; %s
 	Profession: %s
-	Pseudos: %s ; %s ; %s
+	Nicknames: %s ; %s ; %s
 
 	Facebook  (%s) - %s
 	Twitter   (%s) - %s
 	Instagram (%s) - %s
 
-	Endroit visité: %s
+	Place visited: %s
 
 	Descriptions: 
 	%s	
@@ -246,7 +246,7 @@ def profilerFunc(profile='', path=''):
 				data = pr.timeSort(lists, reverse=True) # True: Ordre Decroissant, False: Ordre croissant (defaut : False)
 
 				TABLE_DATA = [
-					('Date', 'Domain', 'Publication', 'Localisation'),
+					('Date', 'Domain', 'Publication', 'Location'),
 				]
 
 				for d in data:
@@ -278,11 +278,11 @@ def profilerFunc(profile='', path=''):
 
 			if len(list_news) > 0:
 				newsItems = "; ".join(list_news)
-				print("Nouveautés:\n"+newsItems)
+				print("New Arrivals:\n"+newsItems)
 			
 			print("-------------")
 
-			print(question+" Voulez-vous exporter les données récupérées dans '%s' ? " % (name_txt))
+			print(question+" Do you want to export the recovered data to '%s' ? " % (name_txt))
 
 			while True:
 				choix = input("\n [O/n]: ")
@@ -290,22 +290,22 @@ def profilerFunc(profile='', path=''):
 				if choix == '' or choix.upper() == 'O':
 					f = pr.exportText(name_txt, path, global_info)
 					if f:
-						print("\n"+found+" Données exporté avec succès !")
+						print("\n"+found+" Data successfully exported !")
 						print(" %s" % (path_txt))
 					else:
-						print("\n"+warning+" Une erreur est survenue, les données n'ont pas pu être exporté !")
+						print("\n"+warning+" An error has occurred, the data could not be exported !")
 					break
 
 				elif choix.upper() == 'N':
 					break
 
-			print("\n"+question+" Voulez-vous créer une copie de '%s' ? " % (name_txt))
+			print("\n"+question+" Do you want to create a copy of '%s' ? " % (name_txt))
 			
 			while True:
 				choix = input("\n [o/N]: ")
 
 				if choix.upper() == 'O':
-					print("\n"+question+" Ou voulez-vous enregistrer la copie ?")
+					print("\n"+question+" Or do you want to save the copy ?")
 					pathDefault = os.getcwd()
 					print(Fore.YELLOW+" Default path: "+pathDefault+Fore.RESET)
 					path = input("\n Path: ")
@@ -322,7 +322,7 @@ def profilerFunc(profile='', path=''):
 						f.write(global_info)
 						f.close()
 
-					print("\n"+found+" '%s' a été copié avec succès !" % (name_txt))
+					print("\n"+found+" '%s' has been successfully copied !" % (name_txt))
 					break
 
 				elif choix == '' or choix.upper() == 'N':
