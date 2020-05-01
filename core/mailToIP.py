@@ -25,19 +25,19 @@ def mailToIP():
 		s = socket.gethostbyaddr(ip)
 		return(s[0])
 
-	files = input(" Entete path: ")
+	files = input(" Header path: ")
 	if not os.path.exists(files):
-		print("\n"+warning+" Fichier introuvable.")
+		print("\n"+warning+" File not found..")
 	else:
 		pass
 	# clear()		
-	print("\n"+wait+" Recherche en cours ...")
+	print("\n"+wait+" Currently researching ...")
 	f = open(files, 'r')
 
 	for line in f:
 		line.strip()
 		if "From: " in line:
-			print(information+" Message envoye par: "+line.replace("From: ",""))
+			print(information+" Message sent by: "+line.replace("From: ",""))
 		if 'Received: from' in line:
 			ip_find = re.findall( r'[0-9]+(?:\.[0-9]+){3}', line )
 			for ip in ip_find:
