@@ -21,9 +21,9 @@ init()
 
 def searchPersonne(codemonpays):
 
-	nom = input(" Nom, Prénom: ")
-	city = input(" Ville/Departement: ")
-	print("\n"+wait+" Recherche...")
+	nom = input(" Last name,First name: ")
+	city = input(" city/Departement: ")
+	print("\n"+wait+" Research...")
 
 	try:
 
