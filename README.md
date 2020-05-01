@@ -14,7 +14,7 @@ Installation sur Linux
 =
 You must have `git` and `python3` installed on your machine
 ```
-    sudo apt install git python3 #sur les distributions utilisant APT (comme la famille Debian)
+    sudo apt install git python3 #on distributions using APT (like the Debian family)
     git clone https://github.com/Lulz3xploit/LittleBrother
     cd LittleBrother
     python3 -m pip install -r requirements.txt
