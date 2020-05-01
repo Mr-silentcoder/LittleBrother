@@ -1,18 +1,18 @@
 LittleBrother
 =
 
-LittleBrother est un outil de collectes d'informations (OSINT) qui vise à effectuer des recherches sur une personne française, suisse, luxembourgeoise ou belge. Il fournit divers modules qui permettent des recherches efficaces. LittleBrother ne requiert pas de clé API ni d'identifiant de connexion.
+LittleBrother is an information collection tool (OSINT) which aims to carry out research on a French, Swiss, Luxembourg or Belgian person. It provides various modules that allow efficient searches. LittleBrother does not require an API key or login ID.
 
 ![](https://i.ibb.co/YdvfVPw/Capture.png)
 
 Disclaimer
 =
-LittleBrother a été développé pour faire des recherches sur soi-même et pour voir les informations privées et sensibles que l'on peut laisser derrière sur les réseaux sociaux. Je n'encourage en aucun cas l'utilisation de cet outil sur une autre personne que soi-même ou d'utiliser cet outil à mauvais escient. Les auteurs de LittleBrother ne peuvent etre tenu pour responsable de l'utilisation de son outil.
+LittleBrother was developed to do research on yourself and to see the private and sensitive information that can be left behind on social networks. I in no way encourage the use of this tool on someone other than yourself or to use this tool improperly. The authors of LittleBrother cannot be held responsible for the use of its tool.
 
 
 Installation sur Linux
 =
-Il faut avoir `git` et `python3` d'installer sur sa machine
+You must have `git` and `python3` installed on your machine
 ```
     sudo apt install git python3 #sur les distributions utilisant APT (comme la famille Debian)
     git clone https://github.com/Lulz3xploit/LittleBrother
@@ -22,54 +22,54 @@ Il faut avoir `git` et `python3` d'installer sur sa machine
 
 Execution Linux
 =
-Dans le repertoire de LittleBrother, lancez cette commande pour pouvoir lancer LittleBrother:
+In the LittleBrother directory, launch this command to be able to launch LittleBrother:
 ```
 python3 LittleBrother.py
 ```
 
 Installation sur Windows
 =
-- 1. Telecharger [LittleBrother](https://github.com/lulz3xploit/LittleBrother/archive/master.zip)
-- 2. Installez Python depuis le Store Windows
+- 1. Download [LittleBrother](https://github.com/lulz3xploit/LittleBrother/archive/master.zip)
+- 2. Install Python from the Windows Store
 - 4. Dezipper LittleBrother (master.zip)
-- 5. Ouvrez `CMD` et allez dans le repertoire **`LittleBrother-master`** via la commande `cd`.
+- 5. open `CMD` and go to the directory **`LittleBrother-master`** via la commande `cd`.
      P.ex: 
 ```
 cd Desktop\
 cd LittleBrother-master\
 ``` 
-et executez:
+and run:
 ```
     python3 -m pip install -r requirements.txt
 ```
 
-Lancer LittleBrother depuis Windows:
+Launch LittleBrother from Windows:
 =
-- Allez dans le repertoire **LittleBrother-master** comme a son installation et executez la commande: 
+- Go to the directory **LittleBrother-master** as at its installation and execute the command: 
 ```
 python3 LittleBrother.py
 ```
 
 Discord
 =
-Si vous avez des questions, des idées, des problèmes concernant LittleBrother ou si vous voulez juste suivre l'avancement de ce projet.  
+If you have questions, ideas, problems regarding LittleBrother or if you just want to follow the progress of this project.  
 - [Serveur Discord](https://discord.gg/r8GvsYM)
 
-Nouveautées version 6.0
+News version 6.0
 =
 - En plus (+)
-	- Un fichier 'requirements.txt' a été ajouté.
-	- Une nouvelle interface.
-	- Un nouveau module d'OSINT a été ajouté. Le module 'Profiler' permet de créer un profil et de récupérer des informations sur les sites définis par l'utilisateur, de sauvegarder ces données et d'afficher les derniers post publiés sur les réseaux (filtrés selon les dates de publication).
-	- De nouveaux services de recherche (Annuaires) ont été ajoutés selon la localisation de l'utilisateur. LittleBrother utilise votre IP pour déterminer le pays dans lequel vous vous trouvez. En aucun cas votre IP ou autre information privée sera partagé. Vous pourrez choisir un autre pays que le votre pour centraliser vos recherches.
-	- Recherche Instagram et LinkedIn intégrés à 'Personne Lookup'.
-	- Un nouveau module 'Employés recherche' qui permet de faire de trouver des personnes via une entreprise et une ville.
-	- Les modules de recherche d'informations Instagram et Facebook ont été améliorés pour extraire plus d'informations.  
+	- A 'requirements.txt' file has been added.
+	- A new interface.
+	- A new OSINT module has been added. The 'Profiler' module allows you to create a profile and retrieve information on user-defined sites, save this data and display the latest posts published on the networks (filtered according to publication dates).
+	- New search services (Directories) have been added depending on the user's location. LittleBrother uses your IP to determine the country you are in. In no case will your IP or other private information be shared. You can choose a country other than yours to centralize your research.
+	- Instagram and LinkedIn search integrated into 'Person Lookup'.
+	- A new module 'Research employees' which allows to find people via a company and a city.
+	- The Instagram and Facebook information search modules have been improved to extract more information.  
 
-- En moins (-)
-	- Certaines librairies python (dnspython, socket et smtplib) ont été supprimées pour cette version.
-	- 'Social engineering tool' a été modifié pour 'Other tool' il ne comporte que le module de brute force d'un Hash.
-	- Les modules 'Spam Email' et 'SMS' ont été retirés de LittleBrother.
+- En less (-)
+	- Some python libraries (dnspython, socket and smtplib) have been removed for this version.
+	- 'Social engineering tool' has been modified for 'Other tool', it only includes the brute force module of a Hash.
+	- 'Spam Email' and 'SMS' modules have been removed from LittleBrother.
 
 
 Compatible
